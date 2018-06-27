@@ -1,0 +1,129 @@
+<?xml version="1.0" enconding="tf-8">
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:Layout_width="match_parent"
+    android:Layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.android.singlescreenapp.MainActivity">
+
+<ImageView
+      android:id="@+id/black"
+      android:Layout_width="match_parent"
+      android:Layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:src="@drawable/Image"
+      android:scaleType="fitStart"
+      android:Layout_allignParentTop="true" />
+
+<ImageView
+      android:Layout_width="match_parent"
+      android:Layout_height="match_parent"
+      android:Layout_below="@+id/hours"
+      android:src="@drawable/Image"
+      android:scaleType="centerCrop" />
+
+<TextView
+      android:id="@+id/description_title"
+      android:Layout_width="wrap_content"
+      android:Layout_height="wrap_content"
+      android:text="Description"
+      android:textColor="@android:color/holo_purple"
+      android:textSize="24sp"
+      android:Layout_below="@+id/black"
+      android:Layout_margin="5dp" />
+
+<TextView
+        android:id="@+id/description"
+        android:Layout_width="wrap_content"
+        android:Layout_height="wrap_content"
+        android:text="Will enter text when i resolved syntax errors"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:Layout_below="@+id/description_title"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp />
+
+<TextView
+        android:id="@+id/contact"
+        android:Layout_width="wrap_content"
+        android:Layout_height="wrap_content"
+        android:text="contact information:"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="24sp"
+        android:Layout_below="@+id/description"
+        android:Layout_margin="5dp />
+
+<TextView
+        android:id="@+id/telephone"
+        android:Layout_width="wrap_content"
+        android:Layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="Telephone number : 123456789"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:Layout_below="@+id/contact"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp" />
+
+<TextView
+        android:id="@+id/address"
+        android:Layout_width="wrap_content"
+        android:Layout_height="wrap_content"
+        android:autoLink="map"
+        android:text="address: xxx, xxxx, xxx"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:Layout_below="@+id/telephone"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp" />
+
+<TextView
+        android:id="@+id/website"
+        android:Layout_width="match_parent"
+        android:Layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="website:www.google.com"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:Layout_below="@+id/address"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp" />
+
+<TextView
+        android:id="@+id/email"
+        android:Layout_width="match_parent"
+        android:Layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="Email : prabhurtnp@xxx.com"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:Layout_below="@+id/website"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp" />
+
+<TextView
+        android:id="@+id/timings"
+        android:Layout_width="wrap_content"
+        android:Layout_height="wrap_content"
+        android:text="Timings"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:Layout_below="@+id/email"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp" />
+
+<TextView
+        android:id="@+id/hours"
+        android:Layout_width="wrap_content"
+        android:Layout_height="wrap_content"
+        android:text="mon to sat : 10am - 7 pm / sun = 10am - 3 pm"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:Layout_below="@+id/timings"
+        android:Layout_marginLeft="10dp"
+        android:Layout_marginRight="5dp" />
+</RelativeLayout>
